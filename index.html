@@ -2,11 +2,123 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Welcome to My GitHub Page</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Seondeok Kim - Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Code&family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Inter', sans-serif;
+      background-color: #0f1117;
+      color: #f0f0f0;
+      line-height: 1.7;
+    }
+
+    header {
+      text-align: center;
+      padding: 80px 20px 40px;
+    }
+
+    header h1 {
+      font-size: 2.8rem;
+      color: #00bcd4;
+      font-family: 'Fira Code', monospace;
+      margin-bottom: 10px;
+    }
+
+    header p {
+      font-size: 1.2rem;
+      color: #aaa;
+    }
+
+    .section {
+      max-width: 900px;
+      margin: 40px auto;
+      padding: 0 20px;
+    }
+
+    .section h2 {
+      font-size: 1.8rem;
+      color: #00bcd4;
+      border-bottom: 1px solid #2a2d3a;
+      padding-bottom: 8px;
+      margin-bottom: 20px;
+    }
+
+    .section ul {
+      list-style: none;
+      padding-left: 0;
+    }
+
+    .section ul li {
+      margin-bottom: 10px;
+    }
+
+    .highlight {
+      color: #64ffda;
+      font-family: 'Fira Code', monospace;
+    }
+
+    .contact a {
+      color: #00bcd4;
+      text-decoration: none;
+    }
+
+    .contact a:hover {
+      text-decoration: underline;
+    }
+
+    footer {
+      text-align: center;
+      margin: 60px 0 20px;
+      font-size: 0.9rem;
+      color: #666;
+    }
+  </style>
 </head>
 <body>
-  <h1>Hello, world!</h1>
-  <p>This is my GitHub Pages site.</p>
+
+  <header>
+    <h1>Seondeok Kim</h1>
+    <p>Master's Student | High Performance Computing | CUDA | Parallel Systems</p>
+  </header>
+
+  <div class="section">
+    <h2>🧑‍💻 About Me</h2>
+    <p>
+      I'm a graduate student in Computer Engineering with a strong focus on <span class="highlight">Parallel Programming</span> and <span class="highlight">GPU-based Computing</span>. I enjoy solving complex performance problems and building optimized systems.
+    </p>
+  </div>
+
+  <div class="section">
+    <h2>📂 Projects</h2>
+    <ul>
+      <li><span class="highlight">Yinyang K-Means Optimization</span> - CUDA-based clustering algorithm with local filtering and workload partitioning.</li>
+      <li><span class="highlight">OpenMP Parallel CPU Filter</span> - Optimized CPU-side filtering for large datasets.</li>
+      <li><span class="highlight">Performance Monitoring Tool</span> - Data collection using Arm Streamline + Jetson Orin integration.</li>
+    </ul>
+  </div>
+
+  <div class="section">
+    <h2>🛠 Skills</h2>
+    <ul>
+      <li>C / C++ / CUDA / OpenMP</li>
+      <li>Python / NumPy / Pandas</li>
+      <li>Linux / Jetson Orin / Embedded Systems</li>
+      <li>Git / GitHub / Markdown</li>
+    </ul>
+  </div>
+
+  <div class="section contact">
+    <h2>📫 Contact</h2>
+    <p>Email: <a href="mailto:seondeok.kim@example.com">seondeok.kim@example.com</a></p>
+    <p>GitHub: <a href="https://github.com/du6293" target="_blank">https://github.com/du6293</a></p>
+    <p>LinkedIn: <a href="https://linkedin.com/in/seondeok-kim" target="_blank">linkedin.com/in/seondeok-kim</a></p>
+  </div>
+
+  <footer>
+    &copy; 2025 Seondeok Kim. All rights reserved.
+  </footer>
+
 </body>
 </html>
