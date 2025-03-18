@@ -3,128 +3,137 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Seondeok Kim - CV</title>
+  <title>Seondeok Kim - CV Portfolio</title>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
   <style>
     body {
       margin: 0;
       font-family: 'Inter', sans-serif;
       background-color: #f5f5f5;
-      color: #222;
-      scroll-behavior: smooth;
-    }
-    header {
-      position: sticky;
-      top: 0;
-      background-color: #2c3e50;
-      padding: 10px 20px;
-      z-index: 1000;
       display: flex;
-      justify-content: center;
-      gap: 30px;
     }
-    header a {
+    .sidebar {
+      width: 280px;
+      background-color: #2c3e50;
       color: #fff;
-      text-decoration: none;
-      font-weight: 600;
+      padding: 40px 20px;
+      height: 100vh;
+      position: fixed;
+      top: 0;
+      left: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
     }
-    header a:hover {
-      text-decoration: underline;
-    }
-    .section {
-      max-width: 1000px;
-      margin: 60px auto;
-      padding: 0 20px;
-    }
-    .section h2 {
-      font-size: 1.8rem;
-      border-bottom: 2px solid #ccc;
-      padding-bottom: 5px;
+    .sidebar img {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      object-fit: cover;
       margin-bottom: 20px;
     }
-    .profile-box {
-      display: flex;
-      align-items: center;
-      gap: 20px;
-      margin-top: 40px;
+    .sidebar h1 {
+      font-size: 1.5rem;
+      margin: 10px 0 20px;
     }
-    .profile-box img {
-      width: 140px;
-      height: auto;
-      border-radius: 50%;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    .nav-menu a {
+      display: block;
+      color: #fff;
+      text-decoration: none;
+      padding: 10px 0;
+      font-weight: 500;
+      text-align: center;
     }
-    .section ul {
+    .nav-menu a:hover {
+      background-color: #1abc9c;
+      border-radius: 8px;
+    }
+    .content {
+      margin-left: 280px;
+      padding: 40px;
+      flex: 1;
+    }
+    section {
+      margin-bottom: 60px;
+    }
+    section h2 {
+      font-size: 1.8rem;
+      border-bottom: 2px solid #ccc;
+      padding-bottom: 10px;
+      margin-bottom: 20px;
+      color: #333;
+    }
+    ul {
       padding-left: 20px;
     }
-    .section ul li {
+    ul li {
       margin-bottom: 8px;
+    }
+    .contact a {
+      color: #2c3e50;
+      text-decoration: none;
+    }
+    .contact a:hover {
+      text-decoration: underline;
     }
     footer {
       text-align: center;
-      margin: 60px 0 20px;
-      font-size: 0.9rem;
       color: #777;
+      font-size: 0.9rem;
+      margin-top: 60px;
     }
   </style>
 </head>
 <body>
-  <header>
-    <a href="#home">Home</a>
-    <a href="#experience">Experience</a>
-    <a href="#education">Education</a>
-    <a href="#certifications">Certifications</a>
-    <a href="#contact">Contact</a>
-  </header>
-
-  <div class="section" id="home">
-    <h2>Home</h2>
-    <div class="profile-box">
-      <img src="profile.jpg" alt="Profile Image">
-      <div>
-        <h3>Seondeok Kim</h3>
-        <p>Graduate student in Computer Engineering | High Performance Computing | CUDA | Embedded Systems</p>
-      </div>
+  <div class="sidebar">
+    <img src="profile.jpg" alt="Profile Picture">
+    <h1>Seondeok Kim</h1>
+    <div class="nav-menu">
+      <a href="#introduction">Introduction</a>
+      <a href="#skills">SkillSet</a>
+      <a href="#portfolio">Portfolio</a>
+      <a href="#contact">Contact</a>
     </div>
   </div>
 
-  <div class="section" id="experience">
-    <h2>Experience</h2>
-    <ul>
-      <li><strong>Yinyang K-Means Optimization</strong> – CUDA clustering with local filtering and workload partitioning.</li>
-      <li><strong>OpenMP Parallel Filtering</strong> – CPU-side filtering for large dataset processing.</li>
-      <li><strong>Performance Monitoring Tool</strong> – Arm Streamline + Jetson Orin integration.</li>
-    </ul>
-  </div>
+  <div class="content">
+    <section id="introduction">
+      <h2>👋 Introduction</h2>
+      <p>I am a graduate student in Computer Engineering under the supervision of Prof. Yunho Oh at Comsys Lab, Korea University. My research focuses on high-performance computing, CUDA programming, and embedded heterogeneous systems.</p>
+    </section>
 
-  <div class="section" id="education">
-    <h2>Education</h2>
-    <ul>
-      <li>MS in Computer Engineering – Korea University (2023–Present)</li>
-      <li>BS in Computer Engineering – Korea University (2019–2023)</li>
-    </ul>
-  </div>
+    <section id="skills">
+      <h2>🛠 SkillSet</h2>
+      <ul>
+        <li>C / C++ / CUDA / OpenMP</li>
+        <li>Python / Pandas / NumPy</li>
+        <li>Jetson Orin / Embedded Linux</li>
+        <li>Git / GitHub / Markdown</li>
+      </ul>
+    </section>
 
-  <div class="section" id="certifications">
-    <h2>Certifications</h2>
-    <ul>
-      <li>NVIDIA CUDA Training Certificate – 2023</li>
-      <li>SQL for Data Science – Coursera</li>
-    </ul>
-  </div>
+    <section id="portfolio">
+      <h2>📁 Portfolio</h2>
+      <ul>
+        <li><strong>Yinyang K-Means Optimization</strong> – CUDA clustering with local filtering and workload partitioning.</li>
+        <li><strong>OpenMP Parallel Filter</strong> – CPU-side filtering for large dataset processing.</li>
+        <li><strong>Performance Monitoring Tool</strong> – Data collection using Arm Streamline and Jetson Orin.</li>
+      </ul>
+    </section>
 
-  <div class="section" id="contact">
-    <h2>Contact</h2>
-    <ul>
-      <li>Email: seondeok.kim@korea.ac.kr | du6293@naver.com</li>
-      <li>GitHub: <a href="https://github.com/du6293" target="_blank">github.com/du6293</a></li>
-      <li>Blog: <a href="https://thunduck.tistory.com" target="_blank">thunduck.tistory.com</a></li>
-      <li>LinkedIn: <a href="https://linkedin.com/in/seondeok-kim" target="_blank">linkedin.com/in/seondeok-kim</a></li>
-    </ul>
-  </div>
+    <section id="contact">
+      <h2>📫 Contact</h2>
+      <ul>
+        <li>Email: <a href="mailto:seondeok.kim@korea.ac.kr">seondeok.kim@korea.ac.kr</a> | <a href="mailto:du6293@naver.com">du6293@naver.com</a></li>
+        <li>GitHub: <a href="https://github.com/du6293" target="_blank">https://github.com/du6293</a></li>
+        <li>Blog: <a href="https://thunduck.tistory.com" target="_blank">https://thunduck.tistory.com</a></li>
+        <li>LinkedIn: <a href="https://linkedin.com/in/seondeok-kim" target="_blank">linkedin.com/in/seondeok-kim</a></li>
+      </ul>
+    </section>
 
-  <footer>
-    &copy; 2025 Seondeok Kim. All rights reserved.
-  </footer>
+    <footer>
+      &copy; 2025 Seondeok Kim. All rights reserved.
+    </footer>
+  </div>
 </body>
 </html>
