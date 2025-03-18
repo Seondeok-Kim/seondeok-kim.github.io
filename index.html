@@ -1,77 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Seondeok Kim - Portfolio</title>
-  <link href="https://fonts.googleapis.com/css2?family=Fira+Code&family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Seondeok Kim - Curriculum Vitae</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
   <style>
     body {
-      margin: 0;
       font-family: 'Inter', sans-serif;
-      background-color: #f0f0f0; /* 회색 배경 */
-      color: #222222; /* 본문 텍스트 */
-      line-height: 1.7;
+      background-color: #f4f4f4;
+      color: #222;
+      margin: 0;
+      padding: 0;
+      line-height: 1.6;
     }
 
     header {
       text-align: center;
-      padding: 60px 20px 40px;
+      padding: 60px 20px 20px;
     }
 
     header h1 {
-      font-size: 2.8rem;
-      color: #000000; /* 검정색 포인트 */
-      font-family: 'Fira Code', monospace;
-      margin-bottom: 10px;
+      font-size: 2.5rem;
+      font-weight: 600;
     }
 
     header p {
-      font-size: 1.2rem;
-      color: #444444;
+      color: #666;
+      font-size: 1.1rem;
     }
 
     .profile-image {
-      width: 150px; /* 사진 크기 조절 */
+      width: 140px;
       height: auto;
-      border-radius: 50%; /* 동그란 사진 */
-      margin-top: 20px;
+      border-radius: 50%;
+      margin: 20px auto 10px;
       display: block;
-      margin-left: auto;
-      margin-right: auto;
-      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
     }
 
     .section {
-      max-width: 900px;
+      max-width: 800px;
       margin: 40px auto;
       padding: 0 20px;
     }
 
     .section h2 {
-      font-size: 1.6rem;
-      color: #000000;
-      border-bottom: 1px solid #cccccc;
-      padding-bottom: 8px;
-      margin-bottom: 20px;
+      font-size: 1.5rem;
+      border-bottom: 2px solid #ccc;
+      padding-bottom: 5px;
+      margin-bottom: 15px;
+      color: #000;
     }
 
     .section ul {
-      list-style: none;
-      padding-left: 0;
+      padding-left: 20px;
     }
 
     .section ul li {
-      margin-bottom: 10px;
-    }
-
-    .highlight {
-      color: #000000;
-      font-family: 'Fira Code', monospace;
+      margin-bottom: 8px;
     }
 
     .contact a {
-      color: #000000;
+      color: #000;
       text-decoration: none;
     }
 
@@ -81,9 +72,9 @@
 
     footer {
       text-align: center;
-      margin: 60px 0 20px;
       font-size: 0.9rem;
-      color: #777777;
+      color: #888;
+      margin: 60px 0 20px;
     }
   </style>
 </head>
@@ -92,28 +83,59 @@
 
   <header>
     <h1>Seondeok Kim</h1>
-    <img src="picasso.jpg" alt="Profile Image" class="profile-image">
-    <p>Master's Degree | High Performance Computing | CUDA | Parallel Systems</p>
+    <img src="profile.jpg" alt="Profile Image" class="profile-image">
+    <p>Master's Degree in Computer Engineering | High Performance Computing | CUDA | Embedded Systems</p>
   </header>
 
   <div class="section">
-    <h2>👩‍💻 About Me</h2>
+    <h2>🧑‍💼 Profile</h2>
     <p>
-      I am currently pursuing a master degree at Comsys under the supervision of Prof. Yunho Oh.<br>
-      I am interested in Computer Architecture. Specifically in NVIDIA Embedded GPU and CPU-GPU hybrid computing.
+      Graduate student specializing in high-performance and parallel computing under Prof. Yunho Oh at Comsys Lab, Korea University.  
+      Strong interest in GPU programming, embedded systems, and heterogeneous computing systems.
     </p>
   </div>
 
   <div class="section">
-    <h2>📂 Papers</h2>
-    <p>
-      <span class="highlight">Kubism</span> – Disassembling and Reassembling K-Means Clustering for Mobile Heterogeneous Platforms.
-    </p>
+    <h2>💼 Project Experience</h2>
+    <ul>
+      <li><strong>Yinyang K-Means Optimization</strong> – CUDA clustering with local filtering and CPU-GPU task partitioning.</li>
+      <li><strong>OpenMP Parallel Filtering</strong> – CPU-side filtering for large dataset processing.</li>
+      <li><strong>Performance Monitoring Tool</strong> – Arm Streamline-based profiling integration with Jetson Orin.</li>
+    </ul>
+  </div>
+
+  <div class="section">
+    <h2>🏆 Awards & Certificates</h2>
+    <ul>
+      <li>Best Paper Award – Korea Computer Congress (KCC) 2024</li>
+      <li>NVIDIA CUDA Developer Certificate – 2023</li>
+      <li>Undergraduate Research Scholarship – Korea University</li>
+    </ul>
+  </div>
+
+  <div class="section">
+    <h2>🎓 Education</h2>
+    <ul>
+      <li><strong>MS in Computer Engineering</strong>, Korea University (2023–Present)</li>
+      <li><strong>BS in Computer Engineering</strong>, Korea University (2019–2023)</li>
+    </ul>
+  </div>
+
+  <div class="section">
+    <h2>📝 Publications</h2>
+    <ul>
+      <li><strong>Kubism</strong> – Disassembling and Reassembling K-Means Clustering for Mobile Heterogeneous Platforms.</li>
+    </ul>
   </div>
 
   <div class="section">
     <h2>🛠 Skills</h2>
-    <p>C / C++ / CUDA</p>
+    <ul>
+      <li>C / C++ / CUDA / OpenMP</li>
+      <li>Python / Pandas / NumPy</li>
+      <li>Linux / Jetson / Embedded Systems</li>
+      <li>Git / GitHub / Markdown</li>
+    </ul>
   </div>
 
   <div class="section contact">
